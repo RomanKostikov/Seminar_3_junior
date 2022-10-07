@@ -8,12 +8,12 @@ Console.Clear();
 Console.Write("Введите число N: ");
 int number = int.Parse(Console.ReadLine()!);
 
+int count = 1;
 int result = 1;
-int pow = 1;
 
-while (result <= number)
+while (count <= number)
 {
-    pow = result * result;
-    Console.WriteLine($"{pow}");
-    result++;
+    result = count * count;
+    Console.WriteLine($"{result}");
+    count++;
 }
